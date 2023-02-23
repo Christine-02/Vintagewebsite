@@ -8,12 +8,47 @@ body {
 }
 
 header {
-  background-color: beige;
+  background-color: white;
   padding: 1rem;
+
+  border-style: double;
 }
 
 header a {
-  color: wheat;
+  color: black;
   font-weight: bold;
   text-decoration: none;
+  font-family: cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 270px;
+  margin: 20px 20px 0px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px black solid;
+
+  margin: 20px auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+.product-info {
+  padding: 1rem;
 }
