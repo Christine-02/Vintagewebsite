@@ -1,8 +1,8 @@
 const data = {
   products: [
     {
-      name: 'Nike Slim shirt',
-      slug: 'nike-slim-shirt',
+      name: 'Prada Blue shirt',
+      slug: 'prada-slim-shirt',
       category: 'Shirts',
       image: '/images/p1.jpg', // 679px × 829px
       price: 120,
@@ -13,8 +13,8 @@ const data = {
       description: 'high quality shirt',
     },
     {
-      name: 'Adidas Fit Shirt',
-      slug: 'adidas-fit-shirt',
+      name: 'Prada Shirt',
+      slug: 'prada-fit-shirt',
       category: 'Shirts',
       image: '/images/p2.jpg',
       price: 250,
@@ -25,8 +25,8 @@ const data = {
       description: 'high quality product',
     },
     {
-      name: 'Nike Slim Pant',
-      slug: 'nike-slim-pant',
+      name: 'Prada Black Shirt',
+      slug: 'prada-black-shirt',
       category: 'Pants',
       image: '/images/p3.jpg',
       price: 25,
@@ -37,8 +37,8 @@ const data = {
       description: 'high quality product',
     },
     {
-      name: 'Adidas Fit Pant',
-      slug: 'adidas-fit-pant',
+      name: 'Prada Checkered Shirt',
+      slug: 'prads-checkered-shirt',
       category: 'Pants',
       image: '/images/p4.jpg',
       price: 65,
