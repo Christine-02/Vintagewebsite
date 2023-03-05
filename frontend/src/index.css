@@ -58,9 +58,7 @@ main {
   position: inline;
 }
 
-/* Make the image responsive */
-
-.container .btn:hover {
+/* .container .btn:hover {
   background-color: blue;
 }
 
@@ -89,24 +87,25 @@ main {
 
 .btn {
   position: absolute;
-  border-color: aqua;
+  border-color: rgb(255, 255, 255);
   border-style: double;
   top: 200px;
   left: 150px;
-  color: black;
+  color: white;
   background-color: transparent;
-  font-size: 60px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0px;
   width: 150px;
   height: 50px;
   border: none;
-  border: solid 2px black;
+  border: solid 2px rgb(255, 255, 255);
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0);
-  font-size: 25px;
+  white-space: normal !important;
+  word-wrap: break-word;
+
+  text-align: center;
 }
 
 .line {
@@ -131,4 +130,15 @@ main {
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+ */
+
+.row1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-large {
+  max-width: 100%;
+  margin-left: 10px;
 }
