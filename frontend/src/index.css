@@ -155,3 +155,7 @@ main {
   color: #000;
   text-decoration: none;
 }
+
+.small-container {
+  max-width: 600px;
+}

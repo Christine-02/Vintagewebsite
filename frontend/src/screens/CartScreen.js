@@ -5,7 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Helmet } from 'react-helmet-async';
 import { Store } from '../Store';
 import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/esm/Button';
 import Card from 'react-bootstrap/Card';
 import MessageBox from '../components/MessageBox';
@@ -13,6 +13,7 @@ import axios from 'axios';
 
 //make this a card like depop
 export default function CartScreen() {
+  const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
     cart: { cartItems },
@@ -35,6 +36,10 @@ export default function CartScreen() {
       type: 'CART_REMOVE_ITEM',
       payload: { item },
     });
+  };
+
+  const checkoutHandler = () => {
+    navigate('/signin?redirect=/shipping');
   };
 
   return (
@@ -117,6 +122,7 @@ export default function CartScreen() {
                     <Button
                       type="button"
                       variant="primary"
+                      onClick={checkoutHandler}
                       disabled={cartItems.length === 0}
                     >
                       Proceed to Checkout
