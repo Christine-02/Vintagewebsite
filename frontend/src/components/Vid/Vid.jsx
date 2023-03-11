@@ -15,7 +15,9 @@ function Vid() {
       <div>
         <h1 className="header-style">THE PLATFORM FOR PERSONAL STYLE</h1>
         <p className="p-style">
-          <button className="custombtn">Shop Now</button>
+          <button onClick={window.scrollTo(500, 0)} className="custombtn">
+            Shop Now
+          </button>
           Buy & discover authenticated pieces from the world's top brands.
         </p>
       </div>

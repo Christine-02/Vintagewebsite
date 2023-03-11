@@ -142,3 +142,16 @@ main {
   max-width: 100%;
   margin-left: 10px;
 }
+
+.imgsml {
+  max-width: 50%;
+}
+
+.img-thumbnail {
+  height: 150px;
+}
+
+.itmname {
+  color: #000;
+  text-decoration: none;
+}
