@@ -86,3 +86,12 @@
 .p {
   position: absolute;
 }
+
+.mp {
+  border: 1px double black;
+}
+
+.np {
+  padding: 0%;
+  border: 1px double black;
+}

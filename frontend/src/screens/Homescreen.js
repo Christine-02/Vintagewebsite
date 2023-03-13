@@ -48,7 +48,9 @@ function HomeScreen() {
       <Helmet>
         <title>The Vintage Vault</title>
       </Helmet>
-
+      <Container>
+        <Vid></Vid>
+      </Container>
       <h1 className="hs">Featured Products </h1>
       <Container>
         <div className="products">
