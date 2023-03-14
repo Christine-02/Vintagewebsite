@@ -43,7 +43,7 @@ export default function CartScreen() {
   };
 
   return (
-    <div>
+    <div className="marg">
       <Helmet>
         <title>Shopping cart</title>
       </Helmet>
