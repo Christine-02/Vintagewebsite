@@ -58,7 +58,8 @@ const Vid = () => {
         {' '}
         <video
           className="vid"
-          src="https://videos.ctfassets.net/bdvz0u6oqffk/54rQSqwZvom9QIgOyXdgl0/623e6c0d17db25d687220a304fa9ce33/_DESKTOP_GRAILED-BRAND-REEL-1280x720px.mp4"
+          // src="https://videos.ctfassets.net/bdvz0u6oqffk/54rQSqwZvom9QIgOyXdgl0/623e6c0d17db25d687220a304fa9ce33/_DESKTOP_GRAILED-BRAND-REEL-1280x720px.mp4"
+          src="https://assets.mixkit.co/videos/preview/mixkit-hand-selecting-through-clothes-23327-large.mp4"
           type="video/mp4"
           muted
           autoPlay={'autoplay'}

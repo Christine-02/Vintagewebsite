@@ -174,3 +174,26 @@ main {
 .marg {
   margin-left: 30px;
 }
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background-color: white;
+  color: black;
+}
+.text-bold {
+  font-weight: bold;
+}
