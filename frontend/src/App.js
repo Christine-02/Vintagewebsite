@@ -9,12 +9,12 @@ import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import SignupScreen from './screens/SignupScreen';
@@ -32,6 +32,11 @@ import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
+import { getError } from './utils';
+import SearchBox from './components/SearchBox';
+import axios from 'axios';
+import { Button } from 'react-bootstrap';
+import SearchScreen from './screens/SearchScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -55,6 +60,7 @@ function App() {
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
+                <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
                   <Link to="/cart" className="nav-link">
                     <h5>
@@ -94,6 +100,7 @@ function App() {
                     )}
                   </h4>
                   <h4>
+                    {/* disp when user is admin  */}
                     {userInfo && userInfo.isAdmin && (
                       <NavDropdown title="Admin" id="admin-nav-dropdown">
                         <LinkContainer to="/admin/dashboard">
@@ -121,7 +128,7 @@ function App() {
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
-
+              <Route path="/search" element={<SearchScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
               <Route
@@ -211,9 +218,6 @@ function App() {
           </div>
         </main>
       </div>
-      <footer>
-        <div className="text-center">All rights reserved</div>
-      </footer>
     </BrowserRouter>
   );
 }
