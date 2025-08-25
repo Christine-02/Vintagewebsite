@@ -24,11 +24,6 @@ An **e-commerce clothing platform** for vintage fashion with 13 core modules + A
 - **Backend**: Node.js + Express.js  
 - **Database**: MongoDB  
 
----
-
-## ⚙️ Requirements
-**Client:** 512 MB RAM · 1.0 GHz CPU · Chrome/any browser  
-**Server:** 1 GB RAM · 2.0 GHz CPU · Node.js · MongoDB  
 
 ---
 
